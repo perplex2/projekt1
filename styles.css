@@ -1,0 +1,228 @@
+/* RESET */
+
+/* Apply a box-sizing border-box model to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and paddings */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set html and body to full height */
+html,
+body {
+  height: 100%;
+}
+
+/* Ensure consistent font styling */
+body {
+  font-family: Arial, sans-serif; /* You can choose your preferred font */
+  line-height: 1.6; /* Adjusts line height for readability */
+}
+
+/* Optional: Add some global styles for links */
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Make link color inherit from parent */
+}
+
+/* Optional: Add styles for lists */
+ul {
+  list-style: none; /* Remove bullet points */
+}
+
+/* HEADER */
+
+.page {
+  max-width: 768px;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  height: 66px;
+  background-color: #33292a;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav img {
+  padding: 20px;
+}
+
+nav + img {
+  height: calc(100vh - 66px); /* Full height minus navbar height */
+  width: 100%; /* Make sure it takes the full width */
+  object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+
+h1 {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+
+  color: white;
+}
+
+h1 span {
+  display: block; /* Each word will be on a new line */
+}
+
+/* MAIN */
+
+.about-us {
+  padding: 70px 20px 90px;
+}
+
+.about-us p {
+  padding: 40px 0 30px;
+}
+
+.about-us img {
+  max-width: 100%;
+}
+
+.what-we-do {
+  padding: 70px 20px 40px;
+
+  background: #33292a;
+  color: white;
+  text-align: center;
+}
+
+.what-we-do p {
+  padding: 40px 0 30px;
+}
+
+.activities {
+  display: flex;
+  flex-direction: column;
+
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.activities img {
+  width: 80px;
+}
+
+.activity {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 10px;
+
+  font-size: large;
+  font-weight: 900;
+}
+
+.our-trips .gallery {
+  margin: 60px 30px 30px;
+}
+
+.our-trips-text {
+  background-color: #f2f2f2;
+  padding: 30px;
+  text-align: center;
+
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.our-trips .gallery img {
+  width: 100%;
+}
+
+.contact-us {
+  padding: 70px 35px 40px;
+
+  color: white;
+  background: #644b4f;
+}
+
+.contact-us h3 {
+  font-size: xx-large;
+  margin-bottom: 50px;
+}
+
+.contact-us p {
+  margin-bottom: 20px;
+}
+
+.contact-us button {
+  padding: 15px 25px;
+  border-radius: 5px; /* Optional: for rounded corners */
+  border: none;
+  margin-top: 40px;
+
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.reviews-section {
+  padding: 70px 20px 90px;
+  text-align: center;
+}
+
+.reviews-intro {
+  margin-bottom: 80px;
+}
+
+.reviews-intro h3 {
+  font-size: xx-large;
+  margin-bottom: 20px;
+}
+
+.reviews {
+  display: flex;
+
+  flex-direction: column;
+  gap: 60px;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  gap: 25px;
+}
+
+.review img {
+  width: 80px; /* Set your desired width */
+  height: 80px; /* Set your desired height */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image scales correctly within the circle */
+}
+
+.review span {
+  font-weight: 700;
+}
+
+.mood-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mood-images img {
+  width: 100%;
+}
