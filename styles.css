@@ -226,3 +226,21 @@ h1 span {
 .mood-images img {
   width: 100%;
 }
+
+/* FOOTER */
+
+.footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #333333;
+  padding: 30px;
+  color: white;
+  font-size: x-small;
+}
+
+.footer a {
+  color: #efa69d;
+  text-decoration: underline;
+}
