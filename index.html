@@ -22,11 +22,11 @@
       <header>
         <nav>
           <ul>
-            <li>About Us</li>
-            <li>What We Do</li>
-            <li>Our Trips</li>
-            <li>Where to go</li>
-            <li>Reviews</li>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#what-we-do">What We Do</a></li>
+            <li><a href="#our-trips">Our Trips</a></li>
+            <li><a href="#contact-us">Where to go</a></li>
+            <li><a href="#reviews-section">Reviews</a></li>
           </ul>
           <img src="my_icons/hamburger.png" alt="Menu Icon" />
         </nav>
@@ -38,7 +38,7 @@
         </h1>
       </header>
       <main>
-        <section class="about-us">
+        <section class="about-us" id="about-us">
           <div class="about-us__text">
             <h2>About us</h2>
             <p>
@@ -62,7 +62,7 @@
             />
           </div>
         </section>
-        <section class="what-we-do">
+        <section class="what-we-do" id="what-we-do">
           <h2>What We Do</h2>
           <p>
             Opportunities for challenging hikes and pleasant strolls are
@@ -95,7 +95,7 @@
             </div>
           </div>
         </section>
-        <section class="our-trips">
+        <section class="our-trips" id="our-trips">
           <div class="gallery">
             <img
               src="images/simon-english-48nerZQCHgo-unsplash.jpg"
@@ -132,7 +132,7 @@
             />
           </div>
         </section>
-        <section class="contact-us">
+        <section class="contact-us" id="contact-us">
           <h3>Where do you want to go?</h3>
           <div class="contact-us__text">
             <p>
@@ -145,7 +145,7 @@
             <button>Contact us</button>
           </div>
         </section>
-        <section class="reviews-section">
+        <section class="reviews-section" id="reviews-section">
           <div class="reviews-intro">
             <h3>Reviews</h3>
             <p>
@@ -200,6 +200,7 @@
             alt="A forest."
           />
         </section>
+        <a href="#" id="scrollToTop" class="scroll-to-top">↑</a>
       </main>
       <footer>
         <div class="footer">
@@ -208,5 +209,31 @@
         </div>
       </footer>
     </div>
+
+    <script>
+      // Get the button
+      const scrollToTopButton = document.getElementById("scrollToTop");
+
+      // Show the button when scrolling down
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 500 ||
+          document.documentElement.scrollTop > 500
+        ) {
+          scrollToTopButton.style.display = "block";
+        } else {
+          scrollToTopButton.style.display = "none";
+        }
+      };
+
+      // Scroll to the top of the page when the button is clicked
+      scrollToTopButton.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth", // Smooth scroll effect
+        });
+      });
+    </script>
   </body>
 </html>

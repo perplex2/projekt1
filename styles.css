@@ -249,15 +249,15 @@ h1 span {
   text-decoration: underline;
 }
 
+.footer a:hover {
+  color: #e9877b;
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   .page {
     max-width: 1200px;
     margin: 0 auto;
-  }
-
-  /* UPRAVIT */
-  header {
-    position: relative;
   }
 
   nav {
@@ -278,10 +278,8 @@ h1 span {
   }
 
   nav + img {
-    height: 60vh; /* Full height minus navbar height */
+    height: 60vh;
   }
-
-  /* UPRAVIT */
 
   h1 {
     bottom: 50px;
@@ -376,5 +374,23 @@ h1 span {
 
   .mood-images img {
     width: 50%;
+  }
+
+  .scroll-to-top {
+    position: fixed; /* Fixes the element in place */
+    bottom: 20px; /* Position from the bottom */
+    right: 20px; /* Position from the right */
+    display: none; /* Initially hidden */
+    background-color: #000; /* Background color (optional) */
+    color: white; /* Text color (optional) */
+    padding: 10px; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners (optional) */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+
+  .scroll-to-top:hover {
+    background-color: #444; /* Change background on hover */
   }
 }
