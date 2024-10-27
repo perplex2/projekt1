@@ -31,7 +31,7 @@ body {
 
 /* Ensure consistent font styling */
 body {
-  font-family: Arial, sans-serif; /* You can choose your preferred font */
+  font-family: "Roboto", Arial, sans-serif; /* You can choose your preferred font */
   line-height: 1.6; /* Adjusts line height for readability */
 }
 
@@ -62,6 +62,10 @@ nav {
 
   display: flex;
   justify-content: flex-end;
+}
+
+nav ul {
+  display: none;
 }
 
 nav img {
@@ -139,7 +143,7 @@ h1 span {
   margin: 60px 30px 30px;
 }
 
-.our-trips-text {
+.our-trips__text {
   background-color: #f2f2f2;
   padding: 30px;
   text-align: center;
@@ -243,4 +247,134 @@ h1 span {
 .footer a {
   color: #efa69d;
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* UPRAVIT */
+  header {
+    position: relative;
+  }
+
+  nav {
+    padding-inline: 10%;
+  }
+
+  nav ul {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  nav + img {
+    height: 60vh; /* Full height minus navbar height */
+  }
+
+  /* UPRAVIT */
+
+  h1 {
+    bottom: 50px;
+    right: 10%;
+    font-size: 350%;
+  }
+
+  /* MAIN */
+
+  .about-us {
+    padding-inline: 10%;
+    display: flex;
+    gap: 30px;
+  }
+
+  .about-us div {
+    flex: 1;
+  }
+
+  .about-us img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .about-us p {
+    padding: 10px 0 0;
+  }
+
+  .what-we-do {
+    padding-inline: 10%;
+  }
+
+  .activities {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 100px;
+  }
+
+  .our-trips {
+    padding-inline: 10%;
+  }
+
+  .our-trips .gallery {
+    margin-inline: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .our-trips__text {
+    width: calc((100% / 3) - 10px); /* Adjust for the two 15px gaps */
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+  }
+
+  .our-trips .gallery img {
+    width: calc((100% / 3) - 10px); /* Adjust for the two 15px gaps */
+  }
+
+  .contact-us {
+    padding-inline: 10%;
+    display: flex;
+
+    gap: 30px;
+  }
+
+  .contact-us h3 {
+    flex: 0 0 250px;
+  }
+
+  .contact-us p {
+    margin-bottom: 20px;
+  }
+
+  .reviews-section {
+    padding-inline: 10%;
+  }
+
+  .reviews-intro {
+    width: 300px;
+    margin: 0 auto 70px;
+  }
+
+  .reviews {
+    flex-direction: row;
+  }
+
+  .mood-images img {
+    width: 50%;
+  }
 }

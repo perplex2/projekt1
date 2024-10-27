@@ -1,7 +1,4 @@
 <!-- TODO -->
-<!-- Desktop zobrazení -->
-<!-- Proměnný na barvy -->
-<!-- Roboto písmo -->
 <!-- DiscordJmeno -->
 
 <!DOCTYPE html>
@@ -12,12 +9,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="page">
       <header>
-        <nav><img src="my_icons/hamburger.png" alt="Menu Icon" /></nav>
+        <nav>
+          <ul>
+            <li>About Us</li>
+            <li>What We Do</li>
+            <li>Our Trips</li>
+            <li>Where to go</li>
+            <li>Reviews</li>
+          </ul>
+          <img src="my_icons/hamburger.png" alt="Menu Icon" />
+        </nav>
         <img src="images/scott-goodwill-y8Ngwq34_Ak-unsplash.jpg" />
         <h1>
           <span>Your</span>
@@ -27,24 +39,28 @@
       </header>
       <main>
         <section class="about-us">
-          <h2>About us</h2>
-          <p>
-            Leigh McAdam is a Calgary-based writer, photographer and social
-            media enthusiast with over 48,000 followers. Her blog:
-            HikeBikeTravel is frequently cited as one of the top travel and
-            outdoor adventure blogs in Canada, and consistently receives over
-            135,000 monthly page views. She shares her enthusiasm for the
-            outdoors as a brand ambassador for Sporting Life, and has worked on
-            campaigns for Travel Alberta, Expedia and Flight Hub. Leigh is the
-            author of Discover Canada: 100 Inspiring Outdoor Adventures.
-            Currently, she is co-authoring: 125 Nature Hot Spots in Alberta
-            (spring 2018). A true adventurer, Leigh will try anything once,
-            except perhaps bungee jumping.
-          </p>
-          <img
-            src="images/anneliese-phillips-uv4-vl3liKM-unsplash.jpg"
-            alt="Couple sitting in a grassy field, facing mountains and trees"
-          />
+          <div class="about-us__text">
+            <h2>About us</h2>
+            <p>
+              Leigh McAdam is a Calgary-based writer, photographer and social
+              media enthusiast with over 48,000 followers. Her blog:
+              HikeBikeTravel is frequently cited as one of the top travel and
+              outdoor adventure blogs in Canada, and consistently receives over
+              135,000 monthly page views. She shares her enthusiasm for the
+              outdoors as a brand ambassador for Sporting Life, and has worked
+              on campaigns for Travel Alberta, Expedia and Flight Hub. Leigh is
+              the author of Discover Canada: 100 Inspiring Outdoor Adventures.
+              Currently, she is co-authoring: 125 Nature Hot Spots in Alberta
+              (spring 2018). A true adventurer, Leigh will try anything once,
+              except perhaps bungee jumping.
+            </p>
+          </div>
+          <div class="about-us__image">
+            <img
+              src="images/anneliese-phillips-uv4-vl3liKM-unsplash.jpg"
+              alt="Couple sitting in a grassy field, facing mountains and trees"
+            />
+          </div>
         </section>
         <section class="what-we-do">
           <h2>What We Do</h2>
@@ -97,7 +113,7 @@
               src="images/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg"
               alt="A person with a backpack."
             />
-            <div class="our-trips-text"><span>Our Trips</span></div>
+            <div class="our-trips__text"><span>Our Trips</span></div>
             <img
               src="images/patrick-szylar-45bM3XGqnDE-unsplash.jpg"
               alt="A lake."
@@ -118,14 +134,16 @@
         </section>
         <section class="contact-us">
           <h3>Where do you want to go?</h3>
-          <p>
-            You’ll find 21 detailed adventure guides, over a hundred practical
-            travel tips, book reviews on anything outdoors related, packing
-            lists on a range of outdoor activities including kayaking,
-            backpacking and camping as well as honest hotel and B&B reviews.
-          </p>
-          <p>Contact us and we will help you!</p>
-          <button>Contact us</button>
+          <div class="contact-us__text">
+            <p>
+              You’ll find 21 detailed adventure guides, over a hundred practical
+              travel tips, book reviews on anything outdoors related, packing
+              lists on a range of outdoor activities including kayaking,
+              backpacking and camping as well as honest hotel and B&B reviews.
+            </p>
+            <p>Contact us and we will help you!</p>
+            <button>Contact us</button>
+          </div>
         </section>
         <section class="reviews-section">
           <div class="reviews-intro">
